@@ -59,6 +59,7 @@ function resetSelected(){
   removeConfetti();
 }
 
+
 // Reset score and player/comp choice
 function resetAll(){
   playerScoreNumber = 0;
@@ -71,6 +72,7 @@ function resetAll(){
   resetSelected();
 }
 
+window.resetAll = resetAll;
 
 // Random computer choice
 function computerRandomChoice(){
@@ -172,6 +174,8 @@ function select(playerChoice){
       break;
   }
 }
+
+window.select = select;
 
 // ON startup set initial value
 resetAll();
